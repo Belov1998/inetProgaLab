@@ -9,11 +9,11 @@ and open the template in the editor.
 */
 /* Цвета
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#A8A7A6; background-color:#0F1620;}
-a{color:#15AD72;}
-a:active, a:focus{background:transparent;}
+body{color:#A8A7A6; background-color:gray;}
+a{color:#15AD72;text-decoration: none;}
+a:active, a:focus{background:transparent;text-decoration: none;}
 
-.row1{border-bottom:1px solid;}
+.row1{border-bottom:1px solid;font-size:22px; }
 .row1{color:#FFFFFF; background-color:rgba(27,32,38,.3);border-color:rgba(255,255,255,.1);}
 /* заголовок
 --------------------------------------------------------------------------------------------------------------- */
@@ -50,7 +50,18 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select option{margin:5px; padding:0; border:none;}
 /* Навигация */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#15AD72; background-color:inherit;}
-#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#15AD72;}
-#mainav form select{color:#FFFFFF; background-color:#0F1620; border-color:rgba(255,255,255,.2);}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:red; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(27,32,38,.3); border-color:rgba(0,0,0,.6); }
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:red;}
+#mainav form select{color:#FFFFFF; background-color:red; border-color:rgba(255,255,255,.2);}
+
+#but{  
+    height: 30px;
+    background-color: red;
+    font-style: initial;
+    color: wheat;
+    border-color: lightgrey;
+    border-style: initial;
+    border-radius: 7px;
+    margin-top: 50px;
+}
