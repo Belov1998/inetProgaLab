@@ -10,38 +10,34 @@ and open the template in the editor.
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
         <title>Главная</title>
     </head>
+
     <body>
-        <div id="mainimg"> 
-            <p id="logo">Автосервис</p>
-            <input id="but" type="button" value="Подать заявку" height="22px"/>
-            <a href="index.php"style="top:0px;">
-                <img src="img/main.png" alt="красивая картинка" width="100%" style="border: 0;">
+
+        <!--        head-->
+        <div class="row0">
+            <div id="logo">Автосервис</div>
+            <input id="but" type="button" value="Подать заявку" height="22px"/><a href="index.php"style="top:0px;">
+                <img src="img/main5.png" alt="красивая картинка" width="100%" style="border: 0;">
             </a>
         </div>
-        <!--        head-->
-
-        <div class="wrapper row1">
+        <div class=" row1">
             <header id="header" > 
 
                 <!--            nav-->
-                <center>
-                    <nav id="mainav" class="fl_right">
-                        <ul >
-                            <li class="active"><a href="index.php">Главная</a></li>
-                            <li><a class="drop" href="#">Услуги</a>
-                                <ul>
-                                    <li><a href="" >Ремонт</a></li>
-                                    <li><a href="">Диагностика</a></li>
-                                    <li><a href="">Покраска</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="pages/contacts.html">Акции</a></li>
-                            <li><a href="pages/contacts.html">Контакты</a></li>
-                        </ul>
-                    </nav>
-
-                </center>
-
+                <nav id="mainav" class="fl_right">
+                    <ul >
+                        <li class="active"><a href="index.php">Главная</a></li>
+                        <li><a class="drop" href="#">Услуги</a>
+                            <ul>
+                                <li><a href="index.php" >Ремонт</a></li>
+                                <li><a href="">Диагностика</a></li>
+                                <li><a href="https://yandex.ru/">Покраска</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Акции</a></li>
+                        <li><a href="index.php">Контакты</a></li>
+                    </ul>
+                </nav>
             </header >
         </div>
         <?php
