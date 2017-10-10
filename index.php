@@ -17,14 +17,10 @@ and open the template in the editor.
         <div class="row0">
             <div id="logo">Автосервис</div>
             <input id="but" type="button" value="Подать заявку" height="22px"/><a href="index.php"style="top:0px;">
-                <img src="img/main5.png" alt="красивая картинка" width="100%" style="border: 0;">
+                <img src="img/main.png" alt="красивая картинка" width="100%" style="border: 0;">
             </a>
-        </div>
-        <div class=" row1">
-            <header id="header" > 
-
-                <!--            nav-->
-                <nav id="mainav" class="fl_right">
+              <!--            nav-->
+                <nav id="mainav" >
                     <ul >
                         <li class="active"><a href="index.php">Главная</a></li>
                         <li><a class="drop" href="#">Услуги</a>
@@ -38,8 +34,30 @@ and open the template in the editor.
                         <li><a href="index.php">Контакты</a></li>
                     </ul>
                 </nav>
-            </header >
         </div>
+        <p> 
+        jnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvu
+        rmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmv
+        ijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnv
+        urmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvij
+        nvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvij
+        nvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvu
+        rmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvij
+        nvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmv
+        ijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurm
+        vijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurm
+        vijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmv
+        ijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvij
+        nvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvu
+        rmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvij
+        nvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmv
+        ijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvijnvurmvi
+        
+        </p>
+        
+        <footer >
+            <p> ©Белов Александр </p>
+        </footer>
         <?php
         // put your code here
         ?>

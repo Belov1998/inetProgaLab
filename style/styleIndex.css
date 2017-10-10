@@ -12,22 +12,24 @@ and open the template in the editor.
 @font-face {
  font-family: "geometric";
  src: url(geometric.otf);
-       
+  /*src: url(geometric.eot);*/     
 }
 *{margin: 0;padding: 0;font-family: 'geometric';box-sizing: border-box;}
-body{color:#A8A7A6; background-color:#51495F;}
-a{color:#15AD72;text-decoration: none;}
-a:active, a:focus{background:transparent;text-decoration: none;}
-.row0{position: relative;}
+body{color:wheat; background-color:darkgrey;position: relative; min-height: 100vh;}
+a{color:#FFFFFF;text-decoration: none;}
+a:active, a:focus{background:transparent;text-decoration: none;}.row0{position: relative;}
+/*
 .row1{border-bottom:1px solid;font-size:30px; }
 .row1{color:#FFFFFF; background-color:#301C53;border-color:rgba(255,255,255,.1);}
 
+header{ font-size:30px;}*/
 /* Навигация
 --------------------------------------------------------------------------------------------------------------- */
-header{ font-size:30px;}
+
 nav{text-align:  center;}
 nav ul{ margin:0; padding:0; list-style:none;}
-#mainav ul{text-transform:uppercase;}
+#mainav{ font-size: 25px;position: fixed; top: 0;left: 50%; transform:translate(-50%,0%) ;border-width :3px;border-style: solid;border-color:#FFFFFF;}
+#mainav ul{text-transform:uppercase;background-color:gray;}
 #mainav ul ul{z-index:9999;visibility:hidden; position:absolute;  text-transform:none;}
 #mainav ul li:first-child{margin:  0;}
 #mainav ul li:hover > ul{visibility:visible; }
@@ -38,9 +40,9 @@ nav ul{ margin:0; padding:0; list-style:none;}
 #mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(27,32,38,.3); border-color:rgba(0,0,0,.6); }
 #mainav li li a{border:solid; border-width:0 0 1px 0;}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#A292BF;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#A292BF; background-color:inherit;}
-#mainav form select{color:#FFFFFF; background-color:#A292BF; border-color:rgba(255,255,255,.2);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:red;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:red; background-color:inherit;}
+#mainav form select{color:#FFFFFF; background-color:red; border-color:#FFFFFF;}
 #but{  
     padding: 5px;
     position:absolute;
@@ -48,11 +50,11 @@ nav ul{ margin:0; padding:0; list-style:none;}
     left: 50%;
     transform:translate(-50%,0) ;
     
-    background-color: #301C53;
+    background-color: red;
     border-color: lightgrey;
     border-style: initial;
     border-radius: 7px; 
-    color: #A292BF;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 30px;
     font-style: initial;
@@ -61,11 +63,28 @@ nav ul{ margin:0; padding:0; list-style:none;}
 
 #logo{
     position:absolute;
+    top: 30px;
     left: 50%;
     transform:translate(-50%,0%) ;
-    color: #A292BF;
+    color: red;
     font-weight: bold;
     font-size: 55px;
     text-transform:uppercase;
     text-shadow: 2px 2px 10px rgb(50,50,50), -2px -2px 10px gray ;
+}
+footer{
+    z-index: 1;
+    position: absolute;
+    bottom : 0;
+    background-color: grey; 
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+footer p{
+    align-content: left;
+    margin-top:10px; 
+   position: relative;
+    font-family: sans-serif;
+    color: darkgray;
 }
