@@ -10,12 +10,13 @@ and open the template in the editor.
 /* Цвета
 --------------------------------------------------------------------------------------------------------------- */
 @font-face {
- font-family: "geometric";
- src: url(geometric.otf);
-  /*src: url(geometric.eot);*/     
+    font-family: "cricket";
+    src: url(cricket.ttf);
+    /*src: url(geometric.eot);*/     
 }
-*{margin: 0;padding: 0;font-family: 'geometric';box-sizing: border-box;}
-body{color:wheat; background-color:darkgrey;position: relative; min-height: 100vh;}
+
+*{margin: 0;padding: 0;font-family: 'cricket';box-sizing: border-box;}
+body{ background-color:darkgray;position: relative; min-height: 100vh;}
 a{color:#FFFFFF;text-decoration: none;}
 a:active, a:focus{background:transparent;text-decoration: none;}.row0{position: relative;}
 /*
@@ -28,13 +29,20 @@ header{ font-size:30px;}*/
 
 nav{text-align:  center;}
 nav ul{ margin:0; padding:0; list-style:none;}
-#mainav{ font-size: 25px;position: fixed; top: 0;left: 50%; transform:translate(-50%,0%) ;border-width :3px;border-style: solid;border-color:#FFFFFF;}
+#mainav{ 
+    font-size: 25px;
+    position: fixed; 
+    top: 0;left: 50%; 
+    transform:translate(-50%,0%) ;
+    border-width :3px;border-style: solid;
+    border-color:#FFFFFF;
+}
 #mainav ul{text-transform:uppercase;background-color:gray;}
 #mainav ul ul{z-index:9999;visibility:hidden; position:absolute;  text-transform:none;}
 #mainav ul li:first-child{margin:  0;}
 #mainav ul li:hover > ul{visibility:visible; }
 #mainav li{display:inline-block; position:relative; margin:0 15px 0 0;}
-#mainav li a{color:inherit; padding:15px 0;}
+#mainav li a{color:#FFFFFF; padding:15px 0;}
 #mainav .drop{padding-left:15px;}
 #mainav li li{width:100%; margin:0;}
 #mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
@@ -49,12 +57,12 @@ nav ul{ margin:0; padding:0; list-style:none;}
     bottom: 10%;
     left: 50%;
     transform:translate(-50%,0) ;
-    
     background-color: red;
     border-color: lightgrey;
     border-style: initial;
     border-radius: 7px; 
     color: #FFFFFF;
+    font-family: 'cricket';
     font-weight: bold;
     font-size: 30px;
     font-style: initial;
@@ -63,7 +71,7 @@ nav ul{ margin:0; padding:0; list-style:none;}
 
 #logo{
     position:absolute;
-    top: 30px;
+    top: 60px;
     left: 50%;
     transform:translate(-50%,0%) ;
     color: red;
@@ -72,6 +80,7 @@ nav ul{ margin:0; padding:0; list-style:none;}
     text-transform:uppercase;
     text-shadow: 2px 2px 10px rgb(50,50,50), -2px -2px 10px gray ;
 }
+#f1{ height: 30px;}
 footer{
     z-index: 1;
     position: absolute;
@@ -82,9 +91,30 @@ footer{
     text-align: center;
 }
 footer p{
-    align-content: left;
     margin-top:10px; 
-   position: relative;
+    position: relative;
     font-family: sans-serif;
     color: darkgray;
+}
+
+#main-div{
+    align-content: center;
+     width: 100%;
+}
+#main-content{
+    word-break: break-all;
+    hyphens: manual;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    font-family: 'cricket';
+    font-size: 20px;
+    color: #482B18;
+}
+
+#main-content h1{
+    text-align: center;
+    font-family: 'cricket';
+    font-size: 30px;
+    color: #481818;
 }
