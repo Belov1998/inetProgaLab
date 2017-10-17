@@ -7,8 +7,6 @@ and open the template in the editor.
     Created on : 23.09.2017, 20:36:48
     Author     : Alexander
 */
-/* Цвета
---------------------------------------------------------------------------------------------------------------- */
 @font-face {
     font-family: "cricket";
     src: url(cricket.ttf);
@@ -16,7 +14,7 @@ and open the template in the editor.
 }
 
 *{margin: 0;padding: 0;font-family: 'cricket';box-sizing: border-box;}
-body{ background-color:darkgray;position: relative; min-height: 100vh;}
+body{ background:linear-gradient(to top, #cccccc 50%, #6d6d6a 50%);position: relative; min-height: 100vh;}
 a{color:#FFFFFF;text-decoration: none;}
 a:active, a:focus{background:transparent;text-decoration: none;}.row0{position: relative;}
 /*
@@ -27,7 +25,7 @@ header{ font-size:30px;}*/
 /* Навигация
 --------------------------------------------------------------------------------------------------------------- */
 
-nav{text-align:  center;}
+nav{z-index: 9999;text-align:  center;}
 nav ul{ margin:0; padding:0; list-style:none;}
 #mainav{ 
     font-size: 25px;
@@ -98,6 +96,11 @@ footer p{
 }
 
 #main-div{
+    background: url(../Img/fon.png)no-repeat center center fixed;
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+     background-size: 100% auto;
     align-content: center;
      width: 100%;
 }
@@ -109,12 +112,22 @@ footer p{
     left: 25%;
     font-family: 'cricket';
     font-size: 20px;
-    color: #482B18;
+    color: black;
 }
 
 #main-content h1{
     text-align: center;
     font-family: 'cricket';
     font-size: 30px;
-    color: #481818;
+    color: black;
+}
+
+#contacts{
+    margin-left: 25%;
+    width: 50%;
+    
+}
+#contacts p{
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
