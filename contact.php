@@ -4,12 +4,12 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
         <link rel="stylesheet" href="style/stylewin.css" type="text/css"/>
-        <title>Главная</title>
+        <title>Контакты</title>
     </head>
 
     <body>
@@ -52,14 +52,14 @@ and open the template in the editor.
             <nav id="mainav" >
                 <ul >
                     <li ><a href="index.php">Главная</a></li>
-                    <li><a class="drop" href="#">Услуги</a>
-                        <ul>
+                    <li><a href="service.php">Услуги</a>
+<!--                        <ul>class="drop" 
                             <li><a href="index.php" >Ремонт</a></li>
                             <li><a href="">Диагностика</a></li>
                             <li><a href="https://yandex.ru/">Покраска</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li><a href="">Акции</a></li>
+                    <li><a href="action.php">Акции</a></li>
                     <li class="active"><a href="contact.php">Контакты</a></li>
                 </ul>
             </nav>

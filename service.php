@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
+        <link rel="stylesheet" href="style/stylewin.css" type="text/css"/>
+        <title>Услуги</title>
+    </head>
+
+    <body>
+        <div id="zatemnenie">
+            <div id="okno">
+                <h2 style="text-align:  center"> Заявка</h2> <br>
+                <div id="content">
+                    <div id="labels">
+                        <label>
+                            Фамилия
+                        </label> 
+                        <label>
+                            Имя
+                        </label>  
+                        <label>
+                            Отчество
+                        </label>  
+                    </div>
+                    <div id="tfs"> 
+                        <input type="text" name="familia" class="tf"/>
+                        <input type="text" name="imia" class="tf"/>
+                        <input type="text" name="otchestvo" class="tf"/>
+                    </div>
+
+                </div>
+                <div style=" text-align:  center; width: 100%; margin-top: 50px;">
+                    <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
+                </div>
+            </div>
+        </div>
+        <!--        head-->
+        <div class="row0">
+            <div id="logo">Автосервис</div>
+            <a href="#zatemnenie" >
+                <input id="but" type="button" value="Подать заявку" height="22px"/></a>
+                 <img src="img/main.png" alt="красивая картинка" width="100%" style="border: 0;padding: 0;margin: 0;">
+            
+            <!--            nav-->
+            <nav id="mainav" >
+                <ul >
+                    <li ><a href="index.php">Главная</a></li>
+                    <li class="active"><a  href="service.php">Услуги</a></li>
+                    <li><a href="action.php">Акции</a></li>
+                    <li><a href="contact.php">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main-div" >
+               
+            <div id="main-content" lang="ru">
+                <h1>Услуги</h1>
+                <div class="service">
+                    <img src="Img/remont.jpg">
+                    <div class="descriptionofservice">
+                        <h3>Ремонт</h3>
+                        Безопасность во время движения напрямую зависит от состояния авто.
+                        Если машина издаёт свист или стук, то вполне возможно, 
+                        что через некоторое время она и вовсе откажется ехать.
+                        Поэтому, необходимо отслеживать работоспособность её систем: 
+                        cцепления, привода, датчика, радиатора.
+                        Неполадки зачастую дают о себе знать при техническом обслуживании,
+                        которое следует проходить каждые 10 тысяч километров.
+                    </div>
+                </div>
+                
+                <div class="service">
+                    <img src="Img/diagnostika.jpg">
+                    <div class="descriptionofservice">
+                        <h3>Диагностика</h3>
+                        За правильную работу автомобиля и ваш комфорт отвечает сразу несколько систем.
+                        Чтобы поездки доставляли только радость, а «средство передвижения» служило ещё долгое время,
+                        необходимо следить за его состоянием.
+                        Детальный осмотр поможет предотвратить или вовремя выявить любую поломку.
+                    </div>
+                </div>
+                
+                <div class="service">
+                    <img src="Img/pokraska.jpg">
+                    <div class="descriptionofservice">
+                        <h3>Покраска</h3>
+                        Мы осуществляем профессиональную покраску автомобилей с 
+                        применением наиболее качественных материалов, 
+                        используя специальные технологии поэтапного нанесения слоев грунта, наполнителя и лаков.
+                        <br>
+                        Профессиональная покраска автомобиля — это само по себе искусство, требующее умелой руки мастера.
+                        Покраска кузова подразумевает под собой целый комплекс операций, который необходимо произвести для 
+                        полного восстановления всего заводского лакокрасочного покрытия, 
+                        включая слои грунта, наполнителя, краски и лака.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="f1">
+            <footer >
+                <p> ©Белов Александр </p>
+            </footer>
+        </div>
+        <?php
+        // put your code here
+        ?>
+    </body>
+</html>
