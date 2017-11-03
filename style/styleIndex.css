@@ -14,13 +14,18 @@ and open the template in the editor.
 }
 
 *{margin: 0;padding: 0;font-family: 'cricket';box-sizing: border-box;}
-body{ background: url(../Img/fon.png)no-repeat center center fixed;
-       -webkit-background-size: 100% auto;
-        -moz-background-size: 100% auto;
-        -o-background-size: 100% auto;
-     background-size: 100% auto;
-     position: relative;
-     min-height: 100vh;}
+body{
+    /**/
+    background: url(../Img/fon.png)no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+min-width: 800px;
+}
 a{color:#FFFFFF;text-decoration: none;}
 a:active, a:focus{background:transparent;text-decoration: none;}
 .row0{position: relative; height: auto;}
@@ -39,6 +44,8 @@ nav ul{ margin:0; padding:0; list-style:none;}
     padding-left: 7px;
     background-color:gray;
     font-size: 25px;
+
+    min-width: 431px;
     position: fixed; 
     top: 0;left: 50%; 
     transform:translate(-50%,0%) ;
@@ -106,10 +113,10 @@ footer p{
 }
 
 #main-div{
-   
-        position: relative;
+
+    position: relative;
     align-content: center;
-     width: 100%;
+    width: 100%;
 }
 #main-content{
     -moz-hyphens: auto;
@@ -117,7 +124,7 @@ footer p{
     -ms-hyphens: auto;
     /*hyphens: manual;*/
     width: 50%;
-    
+
     position: relative;
     left: 25%;
     font-family: 'cricket';
@@ -135,7 +142,7 @@ footer p{
 #contacts{
     margin-left: 25%;
     width: 50%;
-    
+
 }
 #contacts p{
     margin-bottom: 10px;
@@ -180,10 +187,69 @@ footer p{
 .action img{
     margin-left:  5%;
     margin-top:  10px;
-    
     width: 90%;
-    
 }
 .action h4{
     margin-bottom: 5px;
+}
+
+
+@media   (max-width: 1024px) and (min-width: 800px){
+    #mainav{ 
+
+        font-size: 25px;
+
+        min-width: 431px;
+
+    }
+    #but{  
+        font-weight: bold;
+        font-size: 30px;
+
+    }
+    #logo{
+        font-size: 55px;
+    }
+    #main-content h1{
+        font-size: 30px;
+    }#main-content{
+        font-size: 20px;
+    }
+
+}
+@media  (max-width:768px) {
+    #mainav{ 
+        font-size: 12px;
+        min-width: 210px;
+    }
+    #but{  
+        font-size: 15px;
+    }
+    #logo{
+        font-size: 27px;
+    }
+    #main-content h1{
+        font-size: 15px;
+    }#main-content{
+        font-size: 10px;
+    }
+
+}
+@media  (max-width:768px) {
+    #mainav{ 
+        font-size: 12px;
+        min-width: 210px;
+    }
+    #but{  
+        font-size: 15px;
+    }
+    #logo{
+        font-size: 27px;
+    }
+    #main-content h1{
+        font-size: 15px;
+    }#main-content{
+        font-size: 10px;
+    }
+
 }

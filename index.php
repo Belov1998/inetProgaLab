@@ -11,7 +11,6 @@ and open the template in the editor.
         <link rel="stylesheet" href="style/stylewin.css" type="text/css"/>
         <title>Главная</title>
     </head>
-
     <body>
         <div id="zatemnenie">
             <div id="okno">
@@ -19,25 +18,36 @@ and open the template in the editor.
                 <div id="content">
                     <div id="labels">
                         <label>
-                            Фамилия
+                            Имя
                         </label> 
                         <label>
-                            Имя
+                            Авто
                         </label>  
                         <label>
-                            Отчество
+                            Номер телефона
                         </label>  
+                        <label>
+                            Почта
+                        </label>  
+                        <div style=" text-align:  center; width: 100%; ">
+                    <a href="#"> <input id="close" type="button" value="Отправить"  height="22px"/> <?php
+        // put your code here
+                    
+        ?></a>
+                </div>
                     </div>
                     <div id="tfs"> 
-                        <input type="text" name="familia" class="tf"/>
                         <input type="text" name="imia" class="tf"/>
-                        <input type="text" name="otchestvo" class="tf"/>
+                        <input type="text" name="avto" class="tf"/>
+                        <input type="text" name="nomer" class="tf"/>
+                        <input type="text" name="e-mail" class="tf"/>
+                        <div style=" text-align:  center; width: 100%; ">
+                    <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
+                </div>
                     </div>
 
                 </div>
-                <div style=" text-align:  center; width: 100%; margin-top: 50px;">
-                    <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
-                </div>
+                
             </div>
         </div>
         <!--        head-->
@@ -83,4 +93,5 @@ and open the template in the editor.
         // put your code here
         ?>
     </body>
+    
 </html>

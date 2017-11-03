@@ -16,22 +16,26 @@ and open the template in the editor.
         <div id="zatemnenie">
             <div id="okno">
                 <h2 style="text-align:  center"> Заявка</h2> <br>
-                <div id="content">
+                 <div id="content">
                     <div id="labels">
                         <label>
-                            Фамилия
+                            Имя
                         </label> 
                         <label>
-                            Имя
+                            Авто
                         </label>  
                         <label>
-                            Отчество
+                            Номер телефона
+                        </label>  
+                        <label>
+                            Почта
                         </label>  
                     </div>
                     <div id="tfs"> 
-                        <input type="text" name="familia" class="tf"/>
                         <input type="text" name="imia" class="tf"/>
-                        <input type="text" name="otchestvo" class="tf"/>
+                        <input type="text" name="avto" class="tf"/>
+                        <input type="text" name="nomer" class="tf"/>
+                        <input type="text" name="e-mail" class="tf"/>
                     </div>
 
                 </div>
