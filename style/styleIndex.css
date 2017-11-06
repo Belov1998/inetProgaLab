@@ -17,9 +17,9 @@ and open the template in the editor.
 body{
     /**/
     background: url(../Img/fon.png)no-repeat center center fixed;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
+    -webkit-background-size: 100vh auto;
+    -moz-background-size: 100vh auto;
+    -o-background-size: 100vh auto;
 
     background-size: cover;
     position: relative;
@@ -111,7 +111,12 @@ footer p{
     font-family: sans-serif;
     color: darkgray;
 }
-
+.error{
+    display: none;
+}
+.error_input{
+    border: 2px solid #FF0000; 
+}
 #main-div{
 
     position: relative;

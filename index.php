@@ -8,12 +8,21 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"  type="text/javascript"></script>
+   
+       
+
+ <!--        <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>-->
+        <script type="text/javascript" src="JS/valform.js"></script>
+
         <link rel="stylesheet" href="style/stylewin.css" type="text/css"/>
         <title>Главная</title>
     </head>
     <body>
         <div id="zatemnenie">
+            
             <div id="okno">
+                <form action="PHP/validation.php" id="form_test" method="post">
                 <h2 style="text-align:  center"> Заявка</h2> <br>
                 <div id="content">
                     <div id="labels">
@@ -30,7 +39,7 @@ and open the template in the editor.
                             Почта
                         </label>  
                         <div style=" text-align:  center; width: 100%; ">
-                    <a href="#"> <input id="close" type="button" value="Отправить"  height="22px"/> <?php
+                            <a > <input id="close" type="submit" value="Отправить"  height="22px"/> <?php
         // put your code here
                     
         ?></a>
@@ -38,16 +47,24 @@ and open the template in the editor.
                     </div>
                     <div id="tfs"> 
                         <input type="text" name="imia" class="tf"/>
+                        <label id="imia_error" class="error"></label>
+                        
                         <input type="text" name="avto" class="tf"/>
+                        <label id="avto_error" class="error"></label>
+
                         <input type="text" name="nomer" class="tf"/>
+                        <label id="nomer_error" class="error"></label>
+
                         <input type="text" name="e-mail" class="tf"/>
+                        <label id="e-mail_error" class="error"></label>
+
                         <div style=" text-align:  center; width: 100%; ">
                     <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
                 </div>
                     </div>
 
                 </div>
-                
+               </form> 
             </div>
         </div>
         <!--        head-->
@@ -62,11 +79,7 @@ and open the template in the editor.
                 <ul >
                     <li class="active"><a href="index.php">Главная</a></li>
                     <li><a  href="service.php">Услуги</a>
-<!--                        <ul>class="drop"
-                            <li><a href="index.php" >Ремонт</a></li>
-                            <li><a href="">Диагностика</a></li>
-                            <li><a href="https://yandex.ru/">Покраска</a></li>
-                        </ul>-->
+
                     </li>
                     <li><a href="action.php">Акции</a></li>
                     <li><a href="contact.php">Контакты</a></li>
@@ -92,6 +105,8 @@ and open the template in the editor.
         <?php
         // put your code here
         ?>
+         
+          
     </body>
     
 </html>
