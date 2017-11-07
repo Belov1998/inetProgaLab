@@ -8,11 +8,9 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"  type="text/javascript"></script>
-   
-       
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"  type="text/javascript"> </script>-->
+        <script type="text/javascript" src="JS/jquery-3.2.1.min.js" > </script>
 
- <!--        <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>-->
         <script type="text/javascript" src="JS/valform.js"></script>
 
         <link rel="stylesheet" href="style/stylewin.css" type="text/css"/>
@@ -22,7 +20,7 @@ and open the template in the editor.
         <div id="zatemnenie">
             
             <div id="okno">
-                <form action="PHP/validation.php" id="form_test" method="post">
+                <form action="PHP/validation.php"  id="form_test" method="post">
                 <h2 style="text-align:  center"> Заявка</h2> <br>
                 <div id="content">
                     <div id="labels">
@@ -39,10 +37,7 @@ and open the template in the editor.
                             Почта
                         </label>  
                         <div style=" text-align:  center; width: 100%; ">
-                            <a > <input id="close" type="submit" value="Отправить"  height="22px"/> <?php
-        // put your code here
-                    
-        ?></a>
+                            <a > <input id="close" type="submit" value="Отправить"  height="22px"/> </a>
                 </div>
                     </div>
                     <div id="tfs"> 

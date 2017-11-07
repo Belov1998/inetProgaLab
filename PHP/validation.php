@@ -14,10 +14,13 @@
 // массив для хранения ошибок
 $errorContainer = array();
 // полученные данные
-$arrayFields = ['imia' => $_POST['imia'],
-    'avto' => $_POST['avto'],
-    'nomer' => $_POST['nomer'],
-    'e-mail' => $_POST['e-mail']
+// @var $_POST type 
+
+        $arrayFields = [
+    'imia' => filter_input(INPUT_POST,'imia'),
+    'avto' => filter_input(INPUT_POST, 'avto'),
+    'nomer' => filter_input(INPUT_POST,'nomer'),
+   // 'e-mail' => filter_input(INPUT_POST,'e-mail')
    ];
 
 // проверка всех полей на пустоту
@@ -27,7 +30,7 @@ foreach ($arrayFields as $fieldName => $oneField) {
     }
 }
 
-
+ //   echo json_encode(array('result' => 'success'));
 // делаем ответ для клиента
 if (empty($errorContainer)) {
     // если нет ошибок сообщаем об успехе

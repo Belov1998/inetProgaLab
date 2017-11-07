@@ -9,12 +9,18 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
         <link rel="stylesheet" href="style/stylewin.css" type="text/css"/>
+         <script type="text/javascript" src="JS/jquery-3.2.1.min.js" > </script>
+
+        <script type="text/javascript" src="JS/valform.js"></script>
+
         <title>Контакты</title>
     </head>
 
     <body>
         <div id="zatemnenie">
             <div id="okno">
+                  <form action="PHP/validation.php" id="form_test" method="post">
+              
                 <h2 style="text-align:  center"> Заявка</h2> <br>
                  <div id="content">
                     <div id="labels">
@@ -30,6 +36,9 @@ and open the template in the editor.
                         <label>
                             Почта
                         </label>  
+                        <div style=" text-align:  center; width: 100%; ">
+                            <a > <input id="close" type="submit" value="Отправить"  height="22px"/> </a>
+                </div>
                     </div>
                     <div id="tfs"> 
                         <input type="text" name="imia" class="tf"/>
@@ -42,6 +51,7 @@ and open the template in the editor.
                 <div style=" text-align:  center; width: 100%; margin-top: 50px;">
                     <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
                 </div>
+                  </form>
             </div>
         </div>
         <!--        head-->

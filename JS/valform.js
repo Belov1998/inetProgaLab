@@ -5,6 +5,9 @@
  */
 
 
+
+
+
 $(document).ready(function () {
     $('#form_test').submit(function () {
         // убираем класс ошибок с инпутов
@@ -24,9 +27,10 @@ $(document).ready(function () {
             // метод отправки 
             type: "POST",
             // путь до скрипта-обработчика
-       //     url: "../PHP/validation.php",
-       url: "../index.php",
-dataType: "json",
+            url: "PHP/validation.php",
+          // url: "/index.php",
+          // dataType: "jsonp",
+            dataType: "json",
             // какие данные будут переданы
             data: {
                 'imia': imia,
@@ -39,12 +43,13 @@ dataType: "json",
             // действие, при ответе с сервера
             success: function (data) {
                 // в случае, когда пришло success. Отработало без ошибок
-                if (data.result === 'success') {
+                    if (data.result === 'success') {
+                                  
                     alert('форма корректно заполнена');
                     
                     // в случае ошибок в форме
                 } else {
-                    alert('форма не корректно заполнена');
+                    alert('форма не корректно заполнена'+data);
                     // перебираем массив с ошибками
                     for (var errorField in data.text_error) {
                         // выводим текст ошибок 
@@ -55,10 +60,10 @@ dataType: "json",
                         $('#' + errorField).addClass('error_input');
                     }
                 }
+                   // alert('форма корректно заполнена'+data);
             },
-        error: function() {
-            
-                    alert('форма не заполнена');
+        error: function(errMsg) {
+                    alert('форма не заполнена'+errMsg);
         }
             
         });
@@ -66,3 +71,5 @@ dataType: "json",
         return false;
     });
 });
+
+    
