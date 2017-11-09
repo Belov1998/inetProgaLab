@@ -41,17 +41,17 @@ and open the template in the editor.
                 </div>
                     </div>
                     <div id="tfs"> 
-                        <input type="text" name="imia" class="tf"/>
+                        <input type="text"  id="imia"  name="imia" class="tf"/>
                         <label id="imia_error" class="error"></label>
                         
-                        <input type="text" name="avto" class="tf"/>
+                        <input type="text"  id="avto"  name="avto" class="tf"/>
                         <label id="avto_error" class="error"></label>
 
-                        <input type="text" name="nomer" class="tf"/>
+                        <input type="text" id="nomer" name="nomer" class="tf"/>
                         <label id="nomer_error" class="error"></label>
 
-                        <input type="text" name="e-mail" class="tf"/>
-                        <label id="e-mail_error" class="error"></label>
+                        <input type="text" id="email" name="email" class="tf"/>
+                        <label id="email_error" class="error"></label>
 
                         <div style=" text-align:  center; width: 100%; ">
                     <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>

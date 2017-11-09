@@ -20,15 +20,16 @@ $(document).ready(function () {
         // получение данных из полей
         var imia = $('#imia').val();
         var avto = $('#avto').val();
-        var nomer = $('#nomer').val();
-        var email = $('#e-mail').val();
+        var nomer=$('#nomer').val();
+        var email = $('#email').val().toString();
+    //   var email1 = 'trff';//document.forms.email.value.toString();
 
         $.ajax({
             // метод отправки 
             type: "POST",
             // путь до скрипта-обработчика
             url: "PHP/validation.php",
-          // url: "/index.php",
+           //url: "../index.php",
           // dataType: "jsonp",
             dataType: "json",
             // какие данные будут переданы
@@ -36,7 +37,7 @@ $(document).ready(function () {
                 'imia': imia,
                 'avto': avto,
                 'nomer': nomer,
-                'e-mail': email
+                'email': email
             },
             // тип передачи данных
             
@@ -44,12 +45,18 @@ $(document).ready(function () {
             success: function (data) {
                 // в случае, когда пришло success. Отработало без ошибок
                     if (data.result === 'success') {
-                                  
+                        //закрываем нашу форму заявки
+                        document.location.href ="#";     
+                        //     нужно очистить поля ввода
+                        $('#email').val('');
+                        
+                        //Выводим сообщение об успешной отправки данных
                     alert('форма корректно заполнена');
                     
                     // в случае ошибок в форме
                 } else {
-                    alert('форма не корректно заполнена'+data);
+                    //говорим что форма была не корректно заполнена
+                    alert('форма не корректно заполнена'+data+  '  '+email);
                     // перебираем массив с ошибками
                     for (var errorField in data.text_error) {
                         // выводим текст ошибок 
