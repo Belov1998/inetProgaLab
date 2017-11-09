@@ -9,7 +9,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"  type="text/javascript"> </script>-->
-        <script type="text/javascript" src="JS/jquery-3.2.1.min.js" > </script>
+        <script type="text/javascript" src="JS/jquery-3.2.1.min.js" ></script>
 
         <script type="text/javascript" src="JS/valform.js"></script>
 
@@ -18,48 +18,53 @@ and open the template in the editor.
     </head>
     <body>
         <div id="zatemnenie">
-            
+
             <div id="okno">
                 <form action="PHP/validation.php"  id="form_test" method="post">
-                <h2 style="text-align:  center"> Заявка</h2> <br>
-                <div id="content">
-                    <div id="labels">
-                        <label>
-                            Имя
-                        </label> 
-                        <label>
-                            Авто
-                        </label>  
-                        <label>
-                            Номер телефона
-                        </label>  
-                        <label>
-                            Почта
-                        </label>  
-                        <div style=" text-align:  center; width: 100%; ">
-                            <a > <input id="close" type="submit" value="Отправить"  height="22px"/> </a>
-                </div>
+                    <h2 style="text-align:  center"> Заявка</h2> 
+                    <div id="content">
+                        <div id="labels">
+                            <label>
+                                Имя
+                            </label> 
+                            <label>
+                                Авто
+                            </label>  
+                            <label>
+                                Номер телефона
+                            </label>  
+                            <label style="margin-bottom: 15px">
+                                Почта
+                            </label>  
+                            <div style=" text-align:  center; width: 100%; ">
+                                <a > <input id="close" type="submit" value="Отправить"  height="22px"/> </a>
+                            </div>
+                        </div>
+                        <div id="tfs"> 
+                            <div class="tfanderror">
+                                <label id="imia_error" class="error"></label>
+                                <input type="text"  id="imia"  name="imia" class="tf"/>
+                            </div>
+                            <div class="tfanderror">
+                                <label id="avto_error" class="error"></label>
+                                <input type="text"  id="avto"  name="avto" class="tf"/>
+                            </div>
+                            <div class="tfanderror">
+                                <label id="nomer_error" class="error"></label>
+                                <input type="text" id="nomer" name="nomer" class="tf"/>
+                            </div>
+                            <div class="tfanderror" style="margin-bottom: 5px">
+                                <label id="email_error" class="error"></label>
+                                <input type="text" id="email" name="email" class="tf"/>
+                            </div>
+
+                            <div style=" text-align:  center; width: 100%; ">
+                                <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
+                            </div>
+                        </div>
+
                     </div>
-                    <div id="tfs"> 
-                        <input type="text"  id="imia"  name="imia" class="tf"/>
-                        <label id="imia_error" class="error"></label>
-                        
-                        <input type="text"  id="avto"  name="avto" class="tf"/>
-                        <label id="avto_error" class="error"></label>
-
-                        <input type="text" id="nomer" name="nomer" class="tf"/>
-                        <label id="nomer_error" class="error"></label>
-
-                        <input type="text" id="email" name="email" class="tf"/>
-                        <label id="email_error" class="error"></label>
-
-                        <div style=" text-align:  center; width: 100%; ">
-                    <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
-                </div>
-                    </div>
-
-                </div>
-               </form> 
+                </form> 
             </div>
         </div>
         <!--        head-->
@@ -67,8 +72,8 @@ and open the template in the editor.
             <div id="logo">Автосервис</div>
             <a href="#zatemnenie" >
                 <input id="but" type="button" value="Подать заявку" height="22px"/></a>
-                 <img src="img/main.png" alt="красивая картинка" width="100%" style="border: 0;padding: 0;margin: 0;">
-            
+            <img src="img/main.png" alt="красивая картинка" width="100%" style="border: 0;padding: 0;margin: 0;">
+
             <!--            nav-->
             <nav id="mainav" >
                 <ul >
@@ -82,14 +87,14 @@ and open the template in the editor.
             </nav>
         </div>
         <div id="main-div" >
-               
+
             <div id="main-content" lang="ru">
                 <h1>Автосервис</h1>
                 На сегодняшний день, благодаря серьезным инвестициям в современное оборудование, мы можем смело говорить о том, что наш сервис входит в число самых оснащенных по региону, и предлагаем всем владельцам дизельных автомобилей свою помощь в их обслуживании.
                 <br><br>
-У нас вы сможете провести полную и точную диагностику всей топливной аппаратуры, электронных и охладительных систем, климатического оборудования, аппаратную замену масла и антифриза, заправку кондиционера, чистку выпускного тракта и дроссельной заслонки, промывку форсунок и многое другое.
-<br><br>
-Современное, высокоточное оборудование, на котором работают специально обученные мастера узкого профиля, позволит нам безошибочно найти источники возможных рисков и оперативно устранить их. В штате нашего центра работают исключительно профессионалы, имеющие не только технические знания, но и обладающие огромным опытом в их применении на практике. Это относится к автомобилям любой марки.
+                У нас вы сможете провести полную и точную диагностику всей топливной аппаратуры, электронных и охладительных систем, климатического оборудования, аппаратную замену масла и антифриза, заправку кондиционера, чистку выпускного тракта и дроссельной заслонки, промывку форсунок и многое другое.
+                <br><br>
+                Современное, высокоточное оборудование, на котором работают специально обученные мастера узкого профиля, позволит нам безошибочно найти источники возможных рисков и оперативно устранить их. В штате нашего центра работают исключительно профессионалы, имеющие не только технические знания, но и обладающие огромным опытом в их применении на практике. Это относится к автомобилям любой марки.
             </div>
         </div>
         <div id="f1">
@@ -100,8 +105,8 @@ and open the template in the editor.
         <?php
         // put your code here
         ?>
-         
-          
+
+
     </body>
-    
+
 </html>

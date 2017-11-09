@@ -24,22 +24,24 @@ $arrayFields = [
     'email' => filter_input(INPUT_POST,'email')
 ];
 
-// проверка всех полей на пустоту
-foreach ($arrayFields as $fieldName => $oneField) {
-    if ($oneField == '' || !isset($oneField)) {
-        $errorContainer[$fieldName] = 'Поле обязательно для заполнения';
-    }
-}
+
 if(!preg_match('/^([a-z]+)?([a-z0-9-_\.]+)@([a-z]+)?(.[a-z]{2,5}).([a-z]{2,3})$/', $arrayFields['email'])){
     //'Е-Майл не корректный!'
-    $errorContainer['email'] ='Е-Майл не корректный';
+    $errorContainer['email'] ='*Е-Майл не корректный';
 }
 if(!preg_match('/^[0-9]{11}$/', $arrayFields['nomer'])) {
-     $errorContainer['nomer'] ='Номер введен не верно';
+     $errorContainer['nomer'] ='*Номер введен не верно';
 }
 
 if(!preg_match('/^[А-ЯЁ][а-яё]+$/u', $arrayFields['imia'])) {
-     $errorContainer['imia'] ='Проверте имя';
+     $errorContainer['imia'] ='*Проверте имя';
+}
+
+// проверка всех полей на пустоту
+foreach ($arrayFields as $fieldName => $oneField) {
+    if ($oneField == '' || !isset($oneField)) {
+        $errorContainer[$fieldName] = '*Поле обязательно для заполнения';
+    }
 }
 //   echo json_encode(array('result' => 'success'));
 // делаем ответ для клиента
