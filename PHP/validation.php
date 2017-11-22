@@ -11,6 +11,20 @@
  *
  * @author Alexander
  */
+
+//
+//
+//require 'PHPMailerAutoload.php';
+//$mail = new PHPMailer();
+//$mail->setFrom('defond_73_rus@mail.ru');
+//$mail->addAddress('b.a.a.98@mail.ru');
+////$mail->Subject = 'PHPMailer file sender';
+//$mail->msgHTML("My message body");
+////    // Attach uploaded files
+////$mail->addAttachment($filename1);
+////$mail->addAttachment($filename2);
+//$r = $mail->send();
+
 // массив для хранения ошибок
 $errorContainer = array();
 // полученные данные
@@ -45,10 +59,15 @@ foreach ($arrayFields as $fieldName => $oneField) {
 }
 //   echo json_encode(array('result' => 'success'));
 // делаем ответ для клиента
+
 if (empty($errorContainer)) {
-    // если нет ошибок сообщаем об успехе
     echo json_encode(array('result' => 'success'));
+    //require_once( "generationPDF.php" );
+   // $gen=new generationPDF();
+   // $gen->gen($arrayFields['imia'] , $arrayFields['avto'],$arrayFields['nomer']);
+    // если нет ошибок сообщаем об успехе
 } else {
     // если есть ошибки то отправляем
     echo json_encode(array('result' => 'error', 'text_error' => $errorContainer));
 }
+

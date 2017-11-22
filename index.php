@@ -8,7 +8,6 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
-        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"  type="text/javascript"> </script>-->
         <script type="text/javascript" src="JS/jquery-3.2.1.min.js" ></script>
 
         <script type="text/javascript" src="JS/valform.js"></script>
@@ -37,7 +36,7 @@ and open the template in the editor.
                                 Почта
                             </label>  
                             <div style=" text-align:  center; width: 100%; ">
-                                <a > <input id="close" type="submit" value="Отправить"  height="22px"/> </a>
+                                <input id="close" type="submit" value="Отправить"  /> 
                             </div>
                         </div>
                         <div id="tfs"> 
@@ -59,7 +58,7 @@ and open the template in the editor.
                             </div>
 
                             <div style=" text-align:  center; width: 100%; ">
-                                <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
+                                <a href="#"> <input id="close" type="button" value="Закрыть"  /></a>
                             </div>
                         </div>
 
@@ -71,8 +70,8 @@ and open the template in the editor.
         <div class="row0">
             <div id="logo">Автосервис</div>
             <a href="#zatemnenie" >
-                <input id="but" type="button" value="Подать заявку" height="22px"/></a>
-            <img src="img/main.png" alt="красивая картинка" width="100%" style="border: 0;padding: 0;margin: 0;">
+                <input id="but" type="button" value="Подать заявку" /></a>
+            <img id="bgHead" src="img/main.png" alt="красивая картинка" >
 
             <!--            nav-->
             <nav id="mainav" >

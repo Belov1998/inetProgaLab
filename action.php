@@ -10,6 +10,10 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/styleIndex.css" type="text/css"/>
         <link rel="stylesheet" href="style/stylewin.css" type="text/css"/>
+        <script type="text/javascript" src="JS/jquery-3.2.1.min.js" ></script>
+ 
+        <script type="text/javascript" src="JS/valform.js"></script>
+
         <title>Акции</title>
     </head>
 
@@ -69,18 +73,18 @@ and open the template in the editor.
                 <div class="action">
                     <h4>Карта скидок</h4>
                    Карта скидок в подарок при ремонте на сумму от 3000 рублейю.
-                   <img src="Img/karta.jpg">
+                   <img class="imgAction" src="Img/karta.jpg">
                     </div>
                     <div class="action">
                     <h4>Диагностика бесплатно</h4>
                     При ремонте диагностика бесплано. 
-                    <img src="Img/podarok_diagnostika.jpg">
+                    <img class="imgAction" src="Img/podarok_diagnostika.jpg">
                     </div>
                     <div class="action">
                     <h3>Масло в подарок</h3>
                     Замена масла при ремонте на сумму от 5000 рублей.
                     
-                    <img src="Img/zamena_masla_v_dvigatele.jpg">
+                    <img class="imgAction" src="Img/zamena_masla_v_dvigatele.jpg">
                     </div>
                     
               
