@@ -8,10 +8,6 @@ require_once( "fpdf/fpdf.php" );
 $textColour = array( 0, 0, 0 );
 $tableBorderColour = array( 50, 50, 50 );
 
-$reportName = "Talon";
-$name="Name: $n";
-$avto="Avto: $a";
-$nomer="Nomer.: $t";
 
 
 
@@ -30,6 +26,10 @@ $pdf->SetFont( 'Tahoma', '', 24 );
 // Заголовок
 $pdf->SetDrawColor( $tableBorderColour[0], $tableBorderColour[1], $tableBorderColour[2] );
 
+$reportName = "Talon ";
+$name="Name: ".$n;
+$avto="Avto: $a";
+$nomer="Nomer.: $t";
 $pdf->SetTextColor( 0, 0, 0  );
 $pdf->SetFillColor( 143, 173, 204);
 $pdf->Cell( 165, 12, $reportName, 1, 0, 'C', true );
@@ -59,7 +59,7 @@ $pdf->Cell( 40, 10, '', 1, 0, 'L', true );
 /***
   Выводим PDF
 ***/
-$pdf->Output( "F",  $n+'_'+$a+ ".pdf",false);
+$pdf->Output( "F",  $n.'_'.$a.".pdf",false);
 
 }
 

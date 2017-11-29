@@ -16,61 +16,11 @@ and open the template in the editor.
         <title>Главная</title>
     </head>
     <body>
-        <div id="zatemnenie">
-
-            <div id="okno">
-                <form action="PHP/validation.php"  id="form_test" method="post">
-                    <h2 style="text-align:  center"> Заявка</h2> 
-                    <div id="content">
-                        <div id="labels">
-                            <label>
-                                Имя
-                            </label> 
-                            <label>
-                                Авто
-                            </label>  
-                            <label>
-                                Номер телефона
-                            </label>  
-                            <label style="margin-bottom: 15px">
-                                Почта
-                            </label>  
-                            <div style=" text-align:  center; width: 100%; ">
-                                <input id="close" type="submit" value="Отправить"  /> 
-                            </div>
-                        </div>
-                        <div id="tfs"> 
-                            <div class="tfanderror">
-                                <label id="imia_error" class="error"></label>
-                                <input type="text"  id="imia"  name="imia" class="tf"/>
-                            </div>
-                            <div class="tfanderror">
-                                <label id="avto_error" class="error"></label>
-                                <input type="text"  id="avto"  name="avto" class="tf"/>
-                            </div>
-                            <div class="tfanderror">
-                                <label id="nomer_error" class="error"></label>
-                                <input type="text" id="nomer" name="nomer" class="tf"/>
-                            </div>
-                            <div class="tfanderror" style="margin-bottom: 5px">
-                                <label id="email_error" class="error"></label>
-                                <input type="text" id="email" name="email" class="tf"/>
-                            </div>
-
-                            <div style=" text-align:  center; width: 100%; ">
-                                <a href="#"> <input id="close" type="button" value="Закрыть"  /></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </form> 
-            </div>
-        </div>
+        <?php include './win.php';?>
         <!--        head-->
         <div class="row0">
             <div id="logo">Автосервис</div>
-            <a href="#zatemnenie" >
-                <input id="but" type="button" value="Подать заявку" /></a>
+            <a href="#zatemnenie" > <input id="but" type="button" value="Подать заявку" /></a>
             <img id="bgHead" src="img/main.png" alt="красивая картинка" >
 
             <!--            nav-->

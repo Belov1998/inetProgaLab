@@ -14,22 +14,12 @@
 
 //
 //
-//require 'PHPMailerAutoload.php';
-//$mail = new PHPMailer();
-//$mail->setFrom('defond_73_rus@mail.ru');
-//$mail->addAddress('b.a.a.98@mail.ru');
-////$mail->Subject = 'PHPMailer file sender';
-//$mail->msgHTML("My message body");
-////    // Attach uploaded files
-////$mail->addAttachment($filename1);
-////$mail->addAttachment($filename2);
-//$r = $mail->send();
+
 
 // массив для хранения ошибок
 $errorContainer = array();
 // полученные данные
-// @var $_POST type 
-//$imia=$_POST['imia'];
+
 $arrayFields = [
         
     'imia' => filter_input(INPUT_POST,'imia'),
@@ -60,12 +50,49 @@ foreach ($arrayFields as $fieldName => $oneField) {
 //   echo json_encode(array('result' => 'success'));
 // делаем ответ для клиента
 
+
+   
+ 
+   
+
+
+
+
+
+
 if (empty($errorContainer)) {
     echo json_encode(array('result' => 'success'));
-    //require_once( "generationPDF.php" );
-   // $gen=new generationPDF();
-   // $gen->gen($arrayFields['imia'] , $arrayFields['avto'],$arrayFields['nomer']);
-    // если нет ошибок сообщаем об успехе
+     // если нет ошибок сообщаем об успехе
+    
+
+ 
+    $user = 'root';
+    $pass = '';
+    $dbname = 'avtoservis';
+    $db = new mysqli('localhost', $user, $pass, $dbname) ;
+      mysqli_query($db, 'set names utf8');
+    if(mysqli_connect_errno())
+    {
+        exit("Ошибка подключения к базе данных MySQL: Сервер база данных не доступен!<br>
+        Проверте параметры подключения к базе данных.");
+    }
+  
+    $result=$db->prepare("INSERT INTO zayavki (imia,avto,nomer,email) 
+  "."VALUES ('".$arrayFields['imia']."',
+  '".$arrayFields['avto']."',
+  '".$arrayFields['nomer']."',
+  '".$arrayFields['email']."')");
+ $result->execute(); 
+  if(!$result){ exit("Ошибка выполнения SQL запроса!");}
+ 
+  
+  //$id = $db->prepare();
+//$results=$db->prepare("select * from zayavki where id=".$id.";");
+ // $row = mysqli_fetch_array($results);
+  require_once( "generationPDF.php" );
+    $gen=new generationPDF();
+    $gen->gen($arrayFields['imia'] , $arrayFields['avto'],$arrayFields['nomer']);
+   //$gen->gen($row['id'],$row['imia'], $row['avto'],$row['nomer']);
 } else {
     // если есть ошибки то отправляем
     echo json_encode(array('result' => 'error', 'text_error' => $errorContainer));

@@ -17,51 +17,13 @@ and open the template in the editor.
     </head>
 
     <body>
-        <div id="zatemnenie">
-            <div id="okno">
-                  <form action="PHP/validation.php" id="form_test" method="post">
-              
-                <h2 style="text-align:  center"> Заявка</h2> <br>
-                 <div id="content">
-                    <div id="labels">
-                        <label>
-                            Имя
-                        </label> 
-                        <label>
-                            Авто
-                        </label>  
-                        <label>
-                            Номер телефона
-                        </label>  
-                        <label>
-                            Почта
-                        </label>  
-                        <div style=" text-align:  center; width: 100%; ">
-                            <a > <input id="close" type="submit" value="Отправить"  height="22px"/> </a>
-                </div>
-                    </div>
-                    <div id="tfs"> 
-                        <input type="text" name="imia" class="tf"/>
-                        <input type="text" name="avto" class="tf"/>
-                        <input type="text" name="nomer" class="tf"/>
-                        <input type="text" name="e-mail" class="tf"/>
-                    </div>
-
-                </div>
-                <div style=" text-align:  center; width: 100%; margin-top: 50px;">
-                    <a href="#"> <input id="close" type="button" value="Закрыть"  height="22px"/></a>
-                </div>
-                  </form>
-            </div>
-        </div>
+     <?php include './win.php';?>
         <!--        head-->
         <div class="row0">
             <div id="logo">Автосервис</div>
-            <a href="#zatemnenie" >
-                <input id="but" type="button" value="Подать заявку" height="22px"/></a>
-            <a href="index.php"style="top:0px;">
-                <img src="img/main.png" alt="красивая картинка" width="100%" style="border: 0;">
-            </a>
+            <a href="#zatemnenie" > <input id="but" type="button" value="Подать заявку" /></a>
+            <img id="bgHead" src="img/main.png" alt="красивая картинка" >
+
             <!--            nav-->
             <nav id="mainav" >
                 <ul >
