@@ -143,44 +143,42 @@ label{
 }
 #close:hover {background: darkred;}
 /*нужно доделать*/
-@media   (max-width: 1024px) and (min-width: 800px){
-    
-label{
-    height: 16px;
-    margin-bottom: 22px;
-    margin-top: 12px;
-    left: 10px;
-    padding: 3px;
-    font-size: 10px;
 
-    
+@media screen and (max-device-width:768px) {   
+#okno h2 {font-size: 60px;}
+#okno {width: 80%;}
+#labels{ width: 40%;}
+#tfs{ width: 60%;}
+label{
+    height: 40px;
+    margin-bottom: 32px;
+    margin-top: 22px;    
+    left: 10px;
+    padding: 5px;
+    font-size: 30px;
+    display: block;
+    height: 30px;
 }
-.tfanderror{
-    
-    height: 52px;
-   
-}
+.tfanderror{    height: 62px;}
 .tf{
-    
     margin-bottom: 10px;
        margin-top: 14px;
- 
-    padding: 3px;
-    height: 16px;
-    border-radius: 3px;  
-    font-size: 10px;
+   width: 100%;
+    padding: 5px;
+    height: 40px;
+    font-size: 30px;
 }
-
-.error{
-    font-size: 6px;
-    margin:0px 15px 0px 0px;
+.error{font-size: 22px;}
+.error_input{
+    border: 2px solid #FF0000; 
+    margin-top: 2px;
+    margin-bottom: 8px;
+    border-radius: 7px;  
 }
-
 
 #close {
-    padding: 3px;
-    border-radius: 3px; 
-    font-size: 12px;
-    height:18px;
+    padding: 5px;
+    font-size: 42px;
+    height:52px;
 }
 }

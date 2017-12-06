@@ -17,14 +17,16 @@ and open the template in the editor.
 body{
     /**/
     background: url(../Img/fon.png)no-repeat center center fixed;
-    -webkit-background-size: 100vh auto;
-    -moz-background-size: 100vh auto;
+   
+    -webkit-background-size:100vh auto;
+    -moz-background-size:100vh auto;
     -o-background-size: 100vh auto;
+     background-size:cover;
 
-    background-size: cover;
     position: relative;
     min-height: 100vh;
 min-width: 800px;
+width:100%;
 }
 a{color:#FFFFFF;text-decoration: none;}
 a:active, a:focus{background:transparent;text-decoration: none;}
@@ -82,6 +84,8 @@ nav ul{ margin:0; padding:0; list-style:none;}
     font-size: 30px;
     font-style: initial;
 height:40px;
+border-style: solid;
+border-width: 3px;
 }
 #bgHead{
     border: 0;
@@ -153,7 +157,11 @@ footer p{
     margin-bottom: 10px;
     margin-top: 20px;
 }
-
+#map{
+   border:0;
+   width:100%;
+   height:400px;
+}
 .service{
     margin-top: 10px;
     margin-bottom: 15px;
@@ -198,9 +206,8 @@ footer p{
 .action h4{
     margin-bottom: 5px;
 }
-.imgAction{}
 
-@media   (max-width: 1024px) and (min-width: 800px){
+/*@media   (max-width: 1024px) and (min-width: 800px){
     #mainav{ 
 
         font-size: 25px;
@@ -221,22 +228,138 @@ footer p{
         font-size: 20px;
     }
 
-}
-@media  (max-width:768px) {
-    #mainav{ 
-        font-size: 12px;
-        min-width: 210px;
-    }
-    #but{  
-        font-size: 15px;
-    }
-    #logo{
-        font-size: 27px;
-    }
-    #main-content h1{
-        font-size: 15px;
-    }#main-content{
-        font-size: 10px;
-    }
+}*/
+@media screen and (max-device-width:768px) {
+    
+   
+body{
+    /**/
+    background: url(../Img/fonmin.png)no-repeat center center fixed;
+        -webkit-background-size: 100vh auto;
+    -moz-background-size: 100vh auto;
+    -o-background-size: 100vh auto;
 
+    background-size: cover;
+
+    position: relative;
+    min-height: 100vh;
+min-width: 0px;
+width:100%;
 }
+
+
+/* Навигация
+--------------------------------------------------------------------------------------------------------------- */
+
+#mainav{ 
+    padding-left: 7px;
+    font-size: 55px;
+    width: 100%;
+    min-width:0px;
+}
+
+
+
+#mainav li li a{border-width:0 0 1px 0;}
+#but{  
+    padding: 10px;
+    bottom: 10%;
+    left: 50%;
+    transform:translate(-50%,0);
+    border-radius: 12px; 
+    font-size: 80px;
+    height:100px;
+    border-width: 5px;
+}
+
+#bgHead{ width:100%;}
+
+#logo{
+    top: 70px;
+    left: 50%;
+    font-size: 120px;
+}
+#f1{ height: 30px;}
+footer{ height: 30px;}
+footer p{
+    margin-top:10px; 
+    position: relative;
+    font-family: sans-serif;
+}
+
+#main-div{
+    width: 100%;
+}
+#main-content{
+    width: 90%;
+    left: 5%;
+    font-size: 20px;
+}
+
+#main-content h1{
+    font-size: 90px;
+}
+
+#contacts{
+    left: 50%;
+    width: 50%;
+font-size: 50px;
+}
+#map{
+   border:0;
+   width:100%;
+   height:800px;
+}
+#contacts p{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 65px;
+}
+
+.service{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-width: 6px;
+    border-radius: 4px; 
+    width: 100%;
+    padding: 5px;
+}
+.service img{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+    width: 50%;
+    
+}
+.service h3{
+    margin-bottom: 5px;
+}
+
+
+.action{  
+       display: block;
+    margin: 10%;
+    margin-bottom: 5px;
+    border-width: 6px;
+    border-style: double;
+    border-radius: 4px;
+    width: 80%;
+    padding: 5px;
+}
+.action img{
+    margin-left:  5%;
+    margin-top:  10px;
+    width: 90%;
+}
+.action h4{
+    margin-bottom: 5px;
+}
+}
+/*
+@media screen and no (hand)and (max-width:900px) {
+     #mainav{ 
+        font-size: 20px;
+        min-width: 280px;
+    }
+    
+}*/

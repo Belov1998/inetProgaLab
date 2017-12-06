@@ -58,7 +58,7 @@ $(document).ready(function () {
                     // в случае ошибок в форме
                 } else {
                     //говорим что форма была не корректно заполнена
-                    alert('форма не корректно заполнена'+data+  '  '+email);
+                    alert('форма не корректно заполнена');
                     // перебираем массив с ошибками
                     for (var errorField in data.text_error) {
                         // выводим текст ошибок 
@@ -71,8 +71,8 @@ $(document).ready(function () {
                 }
                    // alert('форма корректно заполнена'+data);
             },
-        error: function(errMsg) {
-                    alert('форма не заполнена'+errMsg);
+        error: function() {
+                    alert('форма не заполнена');
         }
             
         });
